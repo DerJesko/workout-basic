@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <script src="exerciseTypes.js"></script>
+    <script src="repTypes.js"></script>
+    <h1>Workout</h1>
+    <p>
+        Today's workout muscle group:
+        <select name="workout-muscle">
+            <option value="chest-triceps">Chest, Triceps</option>
+            <option value="back-biceps">Back, Biceps</option>
+            <option value="leg">Leg</option>
+        </select>
+    </p>
+    <p>
+        Today's workout type:
+        <select name="workout-type">
+            <option value="strength">Strength</option>
+            <option value="strengthen-durance">Strength-Endurance</option>
+        </select>
+    </p>
+
+    <p>
+        Today's exercises:
+    <ul id="exercise-list">
+        <li> Exercise:
+            <select name="exercise-type" id="exercise-type-1">
+            </select>
+            <select name="repetition-type" id="repetition-type-1">
+                <option value="2-4">2-4</option>
+                <option value="3-5">3-5</option>
+                <option value="5-8">5-8</option>
+                <option value="8-12">8-12</option>
+                <option value="12-15">12-15</option>
+                <option value="15-20">15-20</option>
+                <option value="pyramid">Pyramid</option>
+                <option value="drop5-8">Drop Set 5-8</option>
+            </select>
+            Reps done: <input type="number" name="repetitions-done" id="repetitions-done-1" min="0" max="100">
+            Weight done: <input type="number" name="weight-done" id="weight-done-1" min="0" max="2000">
+        </li>
+    </ul>
+    <button id="add-exercise">Add exercise</button>
+    </p>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
